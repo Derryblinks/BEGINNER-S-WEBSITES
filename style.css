@@ -1,0 +1,245 @@
+h1{
+    text-shadow: 2px 3px 5px black;
+    color:white;
+}
+.shadow{text-shadow: 2px 5px 3px;
+    position:absolute;
+
+}
+.box{
+    border:solid;
+    border-radius:40;
+}
+
+#box1{
+    background-color:rgb(210, 238, 157);
+}
+#box2{
+    background-color:beige;
+}
+
+#blinks{
+    float: right;
+    margin-right: 10px;
+}
+
+#cute{
+    float: left;
+    margin-left:none;
+    outline-style:outset;
+    outline-color: rgb(0, 225, 255); 
+}
+#wow{
+    border: solid;
+    overflow:scroll;
+    height:100px;
+    width:400px;
+}
+
+a:link{
+    color:blue;
+
+}
+
+a:hover{
+    color:lightblue;
+}
+
+a:active{
+    font-size:1.1em;
+    color:blue;
+}
+
+a:visited{
+    color:aquamarine;
+}
+
+.pagination{
+    text-align:center;
+
+}
+
+.pagination a{
+    text-decoration: none;
+    text-shadow: 1px 2px 5px;
+    color:white;
+    padding:15px 25px;
+}
+
+.pagination a:hover{
+    color:red;
+    font-size:1.1em;
+   
+}
+
+.pagination a:hover:not(ative){
+    color:rgb(113, 216, 113);
+    border-radius:10px;
+   
+    border:solid;
+
+}
+
+.dropdown{
+    display:inline-block;
+}
+.dropdown button{
+    background-color:rgb(187, 241, 245);
+    font-family:verdana;
+    font-size:bold;
+    border-radius:4px;
+    color:black;
+    padding:5px 10px;
+    cursor:pointer;
+    border:none;
+
+} 
+.dropdown a{
+    display:block;
+    text-decoration:none;
+    padding:5px 10px;
+}
+
+.dropdown .content{
+    display:none;
+    position: absolute;
+    background-color: black;
+    min-width:30px;
+    box-shadow: 2px 3px 5px;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: rgb(85, 160, 165);
+}
+
+.dropdown a:hover{
+    background-color:rgb(147, 156, 163);
+}
+
+.navigation ul{
+    list-style-type: none;
+    background-color:grey;
+    padding:0%;
+    margin:0%;
+    overflow:hidden;
+}
+
+.navigation a{
+    color:white;
+    padding: 10px;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    background-color:rgb(95, 93, 93);
+}
+
+.navigation li{
+    float:left;
+    text-align: center;
+    justify-content: center;
+}
+
+.none{
+    margin:0%;
+}
+
+.main{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+aside{
+    width:20%;
+    float:left;
+    padding:10px;
+}
+
+section{
+    width:40%;
+    float:left;
+    padding: 10px;
+}
+
+article{
+    width:40%;
+    float:left;
+    padding:10px;
+}
+.footer{
+    background-color:rgb(204, 182, 182);
+    display:block;
+    clear:both;
+    text-align: center;
+    padding:25px;
+}
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+.gallery{
+    display:inline-block;
+    margin:4px;
+    border:0.2px solid rgb(95, 102, 112);
+}
+
+
+
+
+.gallery:hover{
+    border:3px solid rgb(136, 115, 115);
+    border-radius:0.2px;
+}
+
+.gallery img{
+    width:100px;
+    height:auto;
+}
+
+#description{
+    text-align:center;
+    padding: 3px;
+}
+
+.translate{
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+    background-color:rgb(0, 255, 42);
+    transform:translateX(200px);
+    transform:translateY(200px) scale(50px);
+    text-align: ceneter;
+ animation-name: slideleft;
+ animation-duration: 15s;
+    
+}
+
+@keyframes slideleft{
+    from{transform:translateX(300%)}
+}
+
+.me{
+    float:left;
+}
+
+.myvideos{
+    position: center;
+    display:inline-block;
+    margin-left:80px;
+    margin-right: 80px;
+    padding: 20px;
+}
